@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadArt Africa | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+            /* keep social icons visible and white whether using SVG or Font Awesome */
+            .social-link i, .social-link svg { color: #fff; fill: #fff; width: 30px; height: 30px; vertical-align: middle; }
+            .social-link i { font-size: 20px; line-height: 1; padding: 6px; }
+            .social-link { margin-right: 10px; display: inline-block; }
+            /* visually hide accessible labels but keep them available to screen readers */
+            .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container" style="display:flex;align-items: center;justify-content: space-between;">
+            <div class="brand">
+                <img src="assets/logo.png" alt="ReadArt Africa logo">
+                <div>
+                    <div class="title">ReadArt Africa</div>
+                    <div class="tag">Celebrating stories & art</div>
+                </div>
+            </div>
+           <nav class="primary" aria-label="Primary navigation">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar"><input type="text" placeholder="Search">
+        <button class="search-bar button">Search</button></div> 
+        </div>
+    </header>
+
+   <main class="container">
+    <h2 class="page-title">Gallery</h2>
+    <p style="color:var(--muted); margin-top: 0;">Local artists and photgraphers. Click an image to view larger.</p>
+
+    <section class="gallery-grid" aria-live="polite">
+        <img src="assets/aging.jpg" alt="Untitled-Artist A">
+        <img src="assets/Sax2.jpg" alt="Portrait-Artist B">
+        <img src="assets/baby.jpg" alt="Landscape-Artist C">
+        <img src="assets/girls.jpg" alt="Abstract-Artist D">
+    </section>
+
+    <section style="margin-top: 18px;">
+        <h3>Artist Spotlight</h3>
+        <div class="card" style="margin-top: 10px;">
+            <img src="assets/aging.jpg" alt="Untitled-Artist">
+            <div>
+                <h3>Rinah Menhele</h3>
+                <p class="muted">Rinah Minhele's mixed-media work explores memory and place using warm palletes and textile-inspired textures.</p>
+                <p><strong>Interview:</strong> Art is how I rewrite silence. I paint to keep memories alive.</p>
+                <p><strong>Style:</strong> Contemporary African expressionism</p>
+                <a href="mailto:rinah@readartafrica.org"><button class="g-btn">Reach out</button></a>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 10px;">
+            <img src="assets/cutie.jpg" alt="smiling kid">
+            <div>
+                <h3>Kato Miles</h3>
+                <p><strong>Interview:</strong> Every brushstroke carries the rythm of home.</p>
+                <p><strong>Medium:</strong> Acrylic on recycled fabric</p>
+                <a href="mailto:kato@readartafrica.org"><button class="g-btn">Reach out</button></a>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 10px;">
+            <img src="assets/empower.jpg" alt="Empowering">
+            <div>
+                <h3>Nyasha Muhingo</h3>
+                <p class="muted">Nyasha, in collaboration with The OutCast, has created a platform for free thinkers and abstract artists.</p>
+                <p><strong>Interview:</strong> My art is both rebellion and refuge.</p>
+                <p><strong>Theme:</strong> Climate. Identity. Transformation</p>
+                <a href="mailto:nyasha@readartafrica.org"><button class="g-btn">Reach out</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="upload">
+        <h2>Share Your Work</h2>
+        <p>Are you an artist or writer? Upload your work to be featured on ReadArt Africa.</p>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <input type="file" required>
+            <button>Upload</button>
+        </form>
+    </section>
+    <footer>
+            ReadArt Africa ~ Cultivating reading and art cross communities 
+            <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--Conatct us-->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Kampala, Uganda</li>
+                    <li>+256 780 334 956</li>
+                    <li>info@readartafrica.org</li>
+                </ul>
+            </div>
+            <!--Follow Us-->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <div class="socials">
+  <a class="social-link" href="https://facebook.com/ReadArtAfrica" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    <span class="sr-only">Facebook</span>
+  </a>
+
+  <a class="social-link" href="https://x.com/ReadArtAfrica" target="_blank" rel="noopener" aria-label="X">
+    <i class="fab fa-x" aria-hidden="true"></i>
+    <span class="sr-only">X</span>
+  </a>
+
+  <a class="social-link" href="https://instagram.com/ReadArtAfrica" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram" aria-hidden="true"></i>
+    <span class="sr-only">Instagram</span>
+  </a>
+
+  <a class="social-link" href="https://youtube.com/ReadArtAfrica" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube" aria-hidden="true"></i>
+    <span class="sr-only">YouTube</span>
+  </a>
+</div>
+                </div>
+            </div>
+       </div> 
+       <p class="copyright">&COPY; 2025 ReadArt Africa. All Rights Reserved.</p>
+        </footer>
+
+   </main>   
+</body>
+</html>
